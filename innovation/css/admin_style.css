@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
+
+:root{
+   --white: #fff;
+   --black:#333;
+   --purple: #b862cf;
+   --gray: #c6de66;
+   --lighting-color: #7cc6ed;
+   --light-bg:#e8e6e6;
+   --light-color:#666;
+   --border:.1rem solid var(--light-color);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear; 
+   /* text-transform: capitalize; */
+}
+
+::-webkit-scrollbar{
+   width: 1rem;
+   height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--purple);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 7.5rem;
+}
+
+body{
+   background: var(--light-bg);
+   overflow-x: hidden;
+}
+
+section{
+   padding:2rem;
+   margin:0 auto;
+   max-width: 1200px;
+}
+
+.heading{
+   text-align: center;
+   margin-bottom: 2rem;
+   /* margin-top: -4.5rem; */
+   font-size: 3rem;
+   color:var(--black);
+   text-transform: uppercase;
+}
+
+.heading span{
+   color: var(--purple);
+   text-transform: uppercase;
+}
+
+
+.sub-heading{
+   font-size: 2.5rem;
+   color: var(--black);
+   text-decoration: underline;
+   margin: 1.5rem;
+   text-transform: capitalize;
+   font-weight: bolder;
+}
+
+.btn{
+   display: inline-block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   padding:1rem 3rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--purple);
+   cursor: pointer;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+/* .btn:hover{
+   background-color:var(--black);
+} */
+
+.btn-1{
+   display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   padding:1rem 3rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--red);
+   cursor: pointer;
+   text-transform: capitalize;
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.btn-1:hover{
+   background-color:var(--black);
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   z-index: 1000;
+   width: 100%;
+   display: block;
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header .flex .logo img{
+   /* font-size: 2.5rem; */
+   /* color:var(--black); */
+   width: 7rem;
+   height: 3.6rem;
+}
+/* 
+.header .flex .logo span{
+   color: var(--purple);
+} */
+
+.header .flex .navbar a{
+   margin:0 1rem;
+   font-size: 2.2rem;
+   color:var(--black);
+   text-transform: capitalize;
+}
+
+.header .flex .navbar a:hover{
+   text-decoration: underline;
+   color:var(--purple);
+}
+
+.header .flex .icons div{
+   font-size: 2.5rem;
+   color: var(--white);
+   cursor: pointer;
+   margin-left: 1.7rem;
+   padding: 1rem;
+   border-radius: .7rem;
+   background-color: var(--purple);
+}
+
+.header .flex .icons div:hover{
+   color:var(--white);
+}
+
+.header .flex .icons div span{
+   font-size: 2rem;
+}
+
+/* #menu-btn{
+   display: none;
+} */
+
+/* new zea code here  */
+
+.header .flex  .navbar ul{
+   list-style: none;
+}
+
+
+.header .flex  .navbar ul li{
+   position: relative;
+   float: left;
+}
+
+.header .flex .navbar ul li a{
+   font-size: 2rem;
+   padding: 12px;
+   color: var(--black);
+   display: block;
+   margin: 0.5rem;
+   text-transform: capitalize;
+}
+
+.header .flex .navbar ul li a:hover{
+   color: var(--purple);
+}
+
+.header .flex .navbar ul li ul{
+   position: absolute;
+   left: 0;
+   width: 200px;
+   background: #fff;
+   display: none;
+}
+
+.header .flex .navbar ul li ul li{
+   width: 100%;
+   border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header .flex .navbar ul li ul li ul{
+   left: 200px;
+   top: 0;
+}
+
+.header .flex .navbar ul li:focus-within > ul,
+.header .flex .navbar ul li:hover > ul{
+    display: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .form-container form{
+    text-align: center;
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 50rem;
+    background-color: var(--white);
+    border:var(--border);
+ }
+ 
+ .form-container form h3{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+ }
+ 
+ .form-container form p{
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:1.3rem;
+    font-size: 2rem;
+    color:var(--light-color);
+    margin:1rem 0;
+    text-transform: capitalize;
+ }
+ 
+ .form-container form p span{
+    color:var(--purple);
+ }
+ 
+ .form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:1.4rem;
+    margin:1rem 0;
+    font-size: 1.8rem;
+    color:var(--black);
+    border:var(--border);
+ }
+ 
+
+ .message{
+   margin: 5px 0;
+   width: 100%;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center;
+   background-color: var(--purple);
+   color: var(--white);
+   font-size: 20px;
+
+}
+
+.messag{
+   margin-top: 15rem;
+   text-align: center;
+   gap: 1.5rem;
+   justify-content: center;
+}
+
+.messag .box-container {
+   display: grid;
+   gap: 1.5rem;
+   grid-template-columns: repeat(auto-fit, 40rem);
+   flex-wrap: 1 1 40rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.messag .box-container .box{
+   padding: 2rem;
+   padding-top: 1rem;
+   border-radius: .5rem;
+   border:var(--border);
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+}
+.messag .box-container .box h3{
+   color: var(--purple);
+   font-size: 2rem;
+   margin: 2rem;
+   
+}
+
+.messag .box-container .box h3 span{
+   color: var(--black);
+   font-size: 1.5rem;
+   text-transform: capitalize;
+}
